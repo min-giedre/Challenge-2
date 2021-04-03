@@ -1,0 +1,121 @@
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+body {
+    height: 625px;
+    background-color: hsl(204, 43%, 93%);
+}
+.container {
+    width: 530px;
+    margin: 10% auto 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5%;
+    box-shadow: -10px 16px 15px hsla(229, 6%, 66%, 0.24), /*left and bottom*/
+    10px 16px 15px hsla(229, 6%, 66%, 0.212); /*right and bottom*/
+}
+.about {
+    grid-column: 1 / 3;
+    color:  hsl(218, 22%, 67%);
+    padding: 5%;
+    background-color: white;
+    border-radius: 5% 5% 0 0;
+}
+.sign {
+    background-color: #2bb3b1;
+    padding: 10%;
+    color: white;
+    border-radius: 0 0 0 5%;
+}
+.whyus {
+    background-color: #4abebd;
+    padding: 10%;
+    color: white;
+    border-radius: 0 0 5% 0;
+}
+.about h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.about h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.about p {
+    font-size: 14px;
+    line-height: 25px;
+}
+.sign h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.pricep {
+    font-size: 12px;
+}
+.dollar {
+    font-size: 30px;
+    margin: 10px 10px 10px 0;
+    font-weight: 700;
+}
+.btn {
+    width: max-content;
+    margin-top: 20px;
+    width: 90%;
+    padding: 5%;
+    border-radius: 3%;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    font-weight: 700;
+    box-shadow: -5px 5px 5px hsla(0, 0%, 0%, 0.082), /*left and bottom*/
+    5px 5px 5px hsla(0, 0%, 0%, 0.068); /*right and bottom*/
+}
+.whyus h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.whyus p {
+    font-size: 10px;
+    line-height: 1.7;
+}
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 300px;
+        grid-template-columns: 1fr;
+        background-color: blueviolet;
+        margin-bottom: 10%;
+        height: 100%;
+    }
+    .about {
+        grid-column: 1;
+        padding: 10%;
+    }
+    .about p {
+        font-size: 12px;
+    }
+    .sign {
+        border-radius: 0;
+    }
+    .whyus {
+        border-radius: 0 0 5% 5%;
+        margin-bottom: 10%;
+    }
+    br {
+        display: none;
+    }
+    .whyus p {
+        font-size: 12px;
+    }
+    footer {
+        margin-top: 40%;
+    }
+}
